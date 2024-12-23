@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image";
+import Navigator from './navigator/page';
 
 export default function Home() {
   return (
@@ -44,6 +47,7 @@ export default function Home() {
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
+            onMouseEnter={() => setExpression("confused","er..")}
           >
             Read our docs
           </a>

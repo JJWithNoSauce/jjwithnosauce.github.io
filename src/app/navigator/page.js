@@ -6,20 +6,38 @@ import { useState } from "react";
 
 export default function Page() {
     
-    const [text, setText] = useState("Hello")
+    const [text, setText] = useState("Hello there!, I'm JJ. Feel free to look around ^ ^")
+    const [img, setImg] = useState("/navigator_normal.gif")
+
+    function SetExpression(expression,text){
+        // switch(expression){
+        //     case "idle":
+        //         setImg("/navigator_normal.gif");
+        //         alert("yay")
+        //     case "confused":
+        //         setImg("/navigator_snoot_recovery.gif");
+        // }
+        if(expression == "confused"){
+            setImg("/navigator_snoot_recovery.gif");
+        }
+        else if(expression == "idle"){
+            setImg("/navigator_normal.gif");
+        }
+        setText(text)
+    }
     
     return (
         <div>
             <h1 id = "header">{text}</h1>
+            
             <Image
-                id= "img1"
-                src="/25231.png"
+                id= "Navigator"
+                src={img}
                 width={300}
                 height={300}
-                alt="github"
-                onMouseEnter={() => setText("Hovering")}
-                onMouseLeave={() => setText("Not Hovering")}
+                alt="navigator"
             />
         </div>
+        
     );
   }
