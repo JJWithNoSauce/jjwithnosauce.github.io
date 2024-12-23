@@ -1,0 +1,22 @@
+/mnt/Programs/SteamLibrary/steamapps/common/Krita/krita.appdir/usr/bin/ffmpeg -hide_banner -y -y -r 24 -start_number 0 -start_number_range 1 -i /home/jjwithnosauce/jjsite/public/jjnormal%04d.png -i /home/jjwithnosauce/jjsite/public/KritaTempPalettegen_%06d.png -lavfi [0:v][1:v]paletteuse=dither=sierra2_4a:diff_mode=none -f gif -loop 0 -gifflags +transdiff /home/jjwithnosauce/jjsite/public/navigator_snoot_recovery.gif
+=====================================================
+Input #0, image2, from '/home/jjwithnosauce/jjsite/public/jjnormal%04d.png':
+  Duration: 00:00:02.40, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: png, rgba(pc), 405x448 [SAR 11811:11811 DAR 405:448], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Input #1, image2, from '/home/jjwithnosauce/jjsite/public/KritaTempPalettegen_%06d.png':
+  Duration: 00:00:00.04, start: 0.000000, bitrate: N/A
+  Stream #1:0: Video: png, rgba(pc), 16x16 [SAR 1:1 DAR 1:1], 25 fps, 25 tbr, 25 tbn, 25 tbc
+Stream mapping:
+  Stream #0:0 (png) -> paletteuse:default
+  Stream #1:0 (png) -> paletteuse:palette
+  paletteuse -> Stream #0:0 (gif)
+Press [q] to stop, [?] for help
+[image2 @ 0x5ddbaeb32a40] Thread message queue blocking; consider raising the thread_queue_size option (current value: 8)
+Output #0, gif, to '/home/jjwithnosauce/jjsite/public/navigator_snoot_recovery.gif':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: gif, pal8(pc, gbr/unknown/unknown, progressive), 405x448 [SAR 1:1 DAR 405:448], q=2-31, 200 kb/s, 24 fps, 100 tbn (default)
+    Metadata:
+      encoder         : Lavc58.134.100 gif
+frame=    1 fps=0.0 q=-0.0 size=       0kB time=00:00:00.01 bitrate=   0.0kbits/s speed=0.612x    frame=   60 fps=0.0 q=-0.0 Lsize=    1375kB time=00:00:02.47 bitrate=4561.9kbits/s speed=10.4x    
+video:1375kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.001420%
