@@ -32,6 +32,8 @@ export default function Home() {
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
+            onMouseEnter={() => updateExpression("confused","yay")}
+            onMouseLeave={() => updateExpression("idle","Hello!")}
           >
             <Image
               className="dark:invert"
@@ -48,6 +50,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             onMouseEnter={() => updateExpression("happy","yay")}
+            onMouseLeave={() => updateExpression("idle","Hello!")}
           >
             Read our docs
           </a>
