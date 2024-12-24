@@ -9,22 +9,6 @@ export default function Page() {
     const [text, setText] = useState("Hello there!, I'm JJ. Feel free to look around ^ ^")
     const [img, setImg] = useState("/navigator_normal.gif")
 
-    function SetExpression(expression,text){
-        // switch(expression){
-        //     case "idle":
-        //         setImg("/navigator_normal.gif");
-        //         alert("yay")
-        //     case "confused":
-        //         setImg("/navigator_snoot_recovery.gif");
-        // }
-        if(expression == "confused"){
-            setImg("/navigator_snoot_recovery.gif");
-        }
-        else if(expression == "idle"){
-            setImg("/navigator_normal.gif");
-        }
-        setText(text)
-    }
     
     return (
         <div>
@@ -40,4 +24,26 @@ export default function Page() {
         </div>
         
     );
-  }
+
+function SetExpression(expression,text){
+    
+
+    // switch(expression){
+    //     case "idle":
+    //         setImg("/navigator_normal.gif");
+    //         alert("yay")
+    //     case "confused":
+    //         setImg("/navigator_snoot_recovery.gif");
+    // }
+        if(expression == "confused"){
+            setImg("/navigator_snoot_recovery.gif");
+        }
+        else if(expression == "idle"){
+            setImg("/navigator_normal.gif");
+        }
+        else if(expression == "happy"){
+            setImg("/navigator_smile.png");
+        }
+        setText(text)
+    }  
+}
