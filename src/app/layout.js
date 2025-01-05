@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, IBM_Plex_Sans_Thai  } from "next/font/google";
 import "./globals.css";
 import Navigator from './navigator/page';
 
@@ -12,8 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const IbmPlexSansThai = IBM_Plex_Sans_Thai({
+  variable: "--fong-"
+});
+
 export const metadata = {
-  title: "Landing Page",
+  title: "JJWithNoSauce!",
   description: "JJWithNoSauce's landing page",
 };
 

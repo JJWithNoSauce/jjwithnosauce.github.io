@@ -4,11 +4,11 @@ import { useState , useEffect } from "react";
   
 const navimg = ["/navigator_normal.gif","/navigator_smile.png","/navigator_snoot_recovery.gif"]
 let currentEmotion = "idle"
-let currentText = "Hello there!, I'm JJ. Feel free to look around ^ ^"
+let currentText = ""
 
 export default function Page() {
     
-    const [text, setText] = useState("Hello there!, I'm JJ. Feel free to look around ^ ^")
+    const [text, setText] = useState("")
     const [img, setImg] = useState("/navigator_normal.gif")
     const [emotion, setEmo] = useState("idle")
 
@@ -37,8 +37,8 @@ export default function Page() {
             <Image
                 id= "Navigator"
                 src={img}
-                width={300}
-                height={300}
+                width={225}
+                height={225}
                 alt="navigator"
             />
         </div>
