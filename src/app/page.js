@@ -10,7 +10,7 @@ export default function Home() {
       <div className="grid h-full w-full grid-cols-10 grid-rows-8 gap-5 p-10">
         <div className="col-span-10 row-span-5 xl:col-span-5 xl:row-span-8 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
           <h1 className="text-left text-4xl xl:text-5xl gap-10">Hiya! I'm JJWithNoSauce!</h1>
-          <h2 className="text-left text-3xl xl:text-4xl gap-10">and I'm super cool AHH =w=</h2>
+          <h2 className="text-left text-3xl xl:text-4xl gap-10">Website's underconstruction, still working on it.</h2>
           
           
           
