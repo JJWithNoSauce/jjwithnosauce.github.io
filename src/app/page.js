@@ -35,8 +35,14 @@ export default function Home() {
           <h1 className="text-right text-3xl xl:text-4xl gap-10">Notable Projects</h1>
 
         </div>
-        <div className="xl:col-span-2 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">Links</div>
-        <div className="xl:col-span-3 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">Contacts</div>
+        
+        <div className="xl:col-span-2 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
+          <h1 className="text-right text-2xl xl:text-3xl gap-10">Links</h1>
+        </div>
+        
+        <div className="xl:col-span-3 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
+          <h1 className="text-right text-2xl xl:text-3xl gap-10">Contacts</h1>
+        </div>
       </div>
     </div>
   );
