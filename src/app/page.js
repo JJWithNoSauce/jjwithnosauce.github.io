@@ -18,12 +18,23 @@ export default function Home() {
           
           </div>
 
+        <div className="xl:col-span-3 xl:row-span-4 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
+        <h1 className="text-left text-4xl xl:text-5xl gap-10">Portfolio</h1>
+        </div>
+        
+        
+        <div className="xl:col-span-2 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
+          <h1 className="text-left text-2xl xl:text-3xl">Skills</h1>
+        </div>
+        
+        <div className="xl:col-span-2 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
+          <h1 className="text-left text-2xl xl:text-3xl">Tools</h1>
+          </div>
+        
+        <div className="xl:col-span-5 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
+          <h1 className="text-right text-3xl xl:text-4xl gap-10">Notable Projects</h1>
 
-
-        <div className="xl:col-span-3 xl:row-span-4 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">Portfolio</div>
-        <div className="xl:col-span-2 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">Skills</div>
-        <div className="xl:col-span-2 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">Tools</div>
-        <div className="xl:col-span-5 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">Something interesting</div>
+        </div>
         <div className="xl:col-span-2 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">Links</div>
         <div className="xl:col-span-3 xl:row-span-2 bg-indigo-200 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">Contacts</div>
       </div>
