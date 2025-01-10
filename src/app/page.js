@@ -6,7 +6,7 @@ import {Navigator,updateExpression} from './navigator/page';
 
 export default function Home() {
   return (
-    <div className="h-screen w-full flex items-center justify-center font-ibmplex">
+    <div className="h-screen w-full flex items-center justify-center font-ibmplex custom-div">
       <div className="grid h-full w-full grid-cols-10 grid-rows-8 gap-5 p-10">
         <div className="col-span-10 row-span-5 xl:col-span-5 xl:row-span-8 bg-[#DBD3D3] h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
           <div>
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
         
         <div className="xl:col-span-2 xl:row-span-2 hover:-translate-y-3 transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl
-         h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
+         h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md cursor-pointer">
           <h1 className="text-left text-2xl xl:text-3xl">Tools</h1>
           </div>
         

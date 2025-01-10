@@ -38,3 +38,14 @@ div.sticky {
   padding: 0px;
   font-size: 20px;
 }
+
+.custom-div {
+  position:absolute;
+  z-index: 0;
+}
+
+.navigator-div {
+  position: fixed;
+  bottom: 0px;
+  left: 16px;
+}

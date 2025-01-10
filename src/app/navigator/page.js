@@ -31,14 +31,14 @@ export default function Page() {
     }, [emotion, currentEmotion]); // Dependencies to re-run the effect if these values change
     
     return (
-        <div className="h-1/3 w-1/3 xl:h-full xl:w-full">
+        <div className="navigator-div transition ease-in-out delay-50 hover:scale-110">
             <h1 id = "dialogue">{text}</h1>
             
             <Image
                 id= "Navigator"
                 src={img}
-                width={225}
-                height={225}
+                width={250}
+                height={250}
                 alt="navigator"
             />
         </div>
