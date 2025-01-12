@@ -37,7 +37,8 @@ export default function Home() {
         
         
         <div className="xl:col-span-2 xl:row-span-2 hover:-translate-y-3 transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl
-         h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md cursor-pointer">
+         h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md cursor-pointer"
+         onClick={() => redirect('/skill')}>
           <h1 className="text-left text-2xl xl:text-3xl">Skills / Experience</h1>
         </div>
         

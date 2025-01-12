@@ -32,7 +32,7 @@ export default function Home() {
           <h1 className="text-left text-4xl xl:text-5xl">Post Production</h1>
         </div>
         
-        <div className="xl:col-span-5 xl:row-span-4 hover:-translate-y-3 transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl
+        <div className="xl:col-span-5 xl:row-span-4 hover:translate-y-3 transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl
          h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md cursor-pointer">
           <h1 className="text-left text-4xl xl:text-5xl">Frontend Design and Development</h1>
           </div>
