@@ -53,7 +53,7 @@ export default function Home() {
                       </div>
                       <div class="p-2">
                           <p class="font-semibold text-lg">Game Development</p>
-                          <span class="text-gray-600">Experienced in implementing gameplay's system, user interface, user experience , in-game animations and effects</span>
+                          <span class="text-gray-600">Experienced in implementing gameplay's system, user interface, user experience , in-game animations and effects using Godot Engine</span>
                       </div>
                   </a>
 
@@ -64,7 +64,7 @@ export default function Home() {
                       </div>
                       <div class="p-2">
                           <p class="font-semibold text-lg">Database Management System and Database Design</p>
-                          <span class="text-gray-600">Experienced in using DBMS to manage and utilize database within various projects</span>
+                          <span class="text-gray-600">Experienced in using DBMS to manage and utilize database within various projects using MySQL, MongoDB, etc</span>
                       </div>
                   </a>
 
@@ -75,7 +75,7 @@ export default function Home() {
                       </div>
                       <div class="p-2">
                           <p class="font-semibold text-lg">Front-end Development and Design</p>
-                          <span class="text-gray-600">Experienced in Front-end Development in various projects, using js frameworks such as Next-JS</span>
+                          <span class="text-gray-600">Experienced in Front-end Development in various projects, using js frameworks such as Next-JS and css framework such as Tailwind</span>
                       </div>
                   </a>
 

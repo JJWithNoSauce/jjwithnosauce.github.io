@@ -36,19 +36,19 @@ export default function Home() {
         </div>
         
         
-        <div className="xl:col-span-2 xl:row-span-2 hover:-translate-y-3 transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl
+        <div className="xl:col-span-2 xl:row-span-4 hover:-translate-y-3 transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl
          h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md cursor-pointer"
          onClick={() => redirect('/skill')}>
-          <h1 className="text-left text-2xl xl:text-3xl">Skills / Experience</h1>
+          <h1 className="text-left text-4xl xl:text-5xl">Skills and Experience</h1>
         </div>
         
-        <div className="xl:col-span-2 xl:row-span-2 hover:-translate-y-3 transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl
+        {/* <div className="xl:col-span-2 xl:row-span-2 hover:-translate-y-3 transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl
          h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md cursor-pointer">
           <h1 className="text-left text-2xl xl:text-3xl">Tools</h1>
-          </div>
+          </div> */}
         
         <div className="xl:col-span-5 xl:row-span-2 bg-[#DBD3D3] opacity-90 hover:opacity-100 h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md">
-          <h1 className="text-right text-3xl xl:text-4xl gap-10">Notable Projects</h1>
+          <h1 className="text-right text-3xl xl:text-5xl gap-10">Services and Commission</h1>
           <h1 className="text-right text-1xl xl:text-2xl gap-10">(coming soon)</h1>
         </div>
         
