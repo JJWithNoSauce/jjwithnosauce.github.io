@@ -46,78 +46,7 @@ export default function Home() {
       duration: "38:40",
       toolset: "toolset1"
     },
-    {
-      link: "https://www.youtube.com/embed/DGWmA5q-PJo?si=rP4Hy0yPYHnS7TBE",
-      thumbnail: "https://img.youtube.com/vi/DGWmA5q-PJo/maxresdefault.jpg",
-      title: "Talking to a Legendary NewGrounds Animator",
-      creator: "ironmouse",
-      views: "118K",
-      likes: "9.2k",
-      duration: "15:47",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/ytLOEj24lSo?si=VoxLmhosdAXGqGjO",
-      thumbnail: "https://img.youtube.com/vi/ytLOEj24lSo/maxresdefault.jpg",
-      title: "He Tried To Take Over My Kitchen...",
-      creator: "OniGiri",
-      views: "66K",
-      likes: "3.8k",
-      duration: "19:54",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/lCMlf9ukMVs?si=KYpb5PnhzxfR2Ptg",
-      thumbnail: "https://img.youtube.com/vi/lCMlf9ukMVs/maxresdefault.jpg",
-      title: "She Really Put My Cooking Skills To Test",
-      creator: "OniGiri",
-      views: "274K",
-      likes: "11k",
-      duration: "15:52",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/-U9XYdht-ng?si=XqAKq5d77jPvb2HV",
-      thumbnail: "https://img.youtube.com/vi/-U9XYdht-ng/maxresdefault.jpg",
-      title: "Ironmouse Discovers Liminal Space...Again!",
-      creator: "ironmouse",
-      views: "167K",
-      likes: "9.7k",
-      duration: "23:16",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/AR4PAVzo-ao?si=kHLb8AHORp7hxpCQ",
-      thumbnail: "https://img.youtube.com/vi/AR4PAVzo-ao/maxresdefault.jpg",
-      title: "I Tried Making Thai Curry Noodle Soup For The First Time!",
-      creator: "OniGiri",
-      views: "52K",
-      likes: "3.1k",
-      duration: "13:12",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/m-qbHAdzD8c?si=rYfZltsYy3Uuqj0k",
-      thumbnail: "https://img.youtube.com/vi/m-qbHAdzD8c/maxresdefault.jpg",
-      title: "KEYCAPS FOR VTUBERS",
-      creator: "OniGiri",
-      views: "52K",
-      likes: "675",
-      duration: "6:27",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/WypAw_5sYv4?si=v6MV3jctpCkuS9Ih",
-      thumbnail: "https://img.youtube.com/vi/WypAw_5sYv4/maxresdefault.jpg",
-      title: "If Your Video Is Bad, I'll End You!",
-      creator: "ironmouse",
-      views: "237K",
-      likes: "13k",
-      duration: "16:03",
-      toolset: "toolset2"
-    },
-
-
+    // Add more video objects here
   ];
 
   const handleScrollToTop = () => {

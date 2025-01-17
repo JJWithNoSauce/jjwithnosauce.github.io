@@ -3,7 +3,7 @@
 import Image from "next/image";
 import {Navigator,updateExpression} from '/src/app/navigator/page.js';
 import { redirect } from 'next/navigation'
-import { useState } from "react"
+import { useState , useEffect } from "react"
 
 export default function Home() {
   const [youtubeEmbed, setYoutubeEmbed] = useState("https://www.youtube.com/embed/AEv02RYOwX0?si=ciFDQXirRNFGYHS7")
@@ -15,110 +15,33 @@ export default function Home() {
   const [aftereffect, setAfterEffect] = useState("transition ease-in-out delay-50 h-20 w-20 object-contain opacity-100 group-hover:opacity-100 transition duration-300")
   const [gimp, setGimp] = useState("transition ease-in-out delay-50 h-20 w-20 object-contain opacity-100 group-hover:opacity-100 transition duration-300")
 
-  const videos = [
-    {
-      link: "https://www.youtube.com/embed/AEv02RYOwX0?si=ciFDQXirRNFGYHS7",
-      thumbnail: "https://img.youtube.com/vi/AEv02RYOwX0/maxresdefault.jpg",
-      title: "Ludwig thinks he's better than me...",
-      creator: "ConnorDawg",
-      views: "697K",
-      likes: "30k",
-      duration: "45:47",
-      toolset: "toolset1"
-    },
-    {
-      link: "https://www.youtube.com/embed/PbmonKkT49M?si=0t9Zreg-s-n4Lgfi",
-      thumbnail: "https://img.youtube.com/vi/PbmonKkT49M/maxresdefault.jpg",
-      title: "I Can't Stop Buying More Models...",
-      creator: "ironmouse",
-      views: "124K",
-      likes: "10k",
-      duration: "15:17",
-      toolset: "toolset1"
-    },
-    {
-      link: "https://www.youtube.com/embed/3JrmhToTQeM?si=E5BKUXu6Nfto6NRZ",
-      thumbnail: "https://img.youtube.com/vi/3JrmhToTQeM/maxresdefault.jpg",
-      title: "The Real Japanese Sakura Viewing Experience",
-      creator: "PremierTwo",
-      views: "84K",
-      likes: "4.2k",
-      duration: "38:40",
-      toolset: "toolset1"
-    },
-    {
-      link: "https://www.youtube.com/embed/DGWmA5q-PJo?si=rP4Hy0yPYHnS7TBE",
-      thumbnail: "https://img.youtube.com/vi/DGWmA5q-PJo/maxresdefault.jpg",
-      title: "Talking to a Legendary NewGrounds Animator",
-      creator: "ironmouse",
-      views: "118K",
-      likes: "9.2k",
-      duration: "15:47",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/ytLOEj24lSo?si=VoxLmhosdAXGqGjO",
-      thumbnail: "https://img.youtube.com/vi/ytLOEj24lSo/maxresdefault.jpg",
-      title: "He Tried To Take Over My Kitchen...",
-      creator: "OniGiri",
-      views: "66K",
-      likes: "3.8k",
-      duration: "19:54",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/lCMlf9ukMVs?si=KYpb5PnhzxfR2Ptg",
-      thumbnail: "https://img.youtube.com/vi/lCMlf9ukMVs/maxresdefault.jpg",
-      title: "She Really Put My Cooking Skills To Test",
-      creator: "OniGiri",
-      views: "274K",
-      likes: "11k",
-      duration: "15:52",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/-U9XYdht-ng?si=XqAKq5d77jPvb2HV",
-      thumbnail: "https://img.youtube.com/vi/-U9XYdht-ng/maxresdefault.jpg",
-      title: "Ironmouse Discovers Liminal Space...Again!",
-      creator: "ironmouse",
-      views: "167K",
-      likes: "9.7k",
-      duration: "23:16",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/AR4PAVzo-ao?si=kHLb8AHORp7hxpCQ",
-      thumbnail: "https://img.youtube.com/vi/AR4PAVzo-ao/maxresdefault.jpg",
-      title: "I Tried Making Thai Curry Noodle Soup For The First Time!",
-      creator: "OniGiri",
-      views: "52K",
-      likes: "3.1k",
-      duration: "13:12",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/m-qbHAdzD8c?si=rYfZltsYy3Uuqj0k",
-      thumbnail: "https://img.youtube.com/vi/m-qbHAdzD8c/maxresdefault.jpg",
-      title: "KEYCAPS FOR VTUBERS",
-      creator: "OniGiri",
-      views: "52K",
-      likes: "675",
-      duration: "6:27",
-      toolset: "toolset2"
-    },
-    {
-      link: "https://www.youtube.com/embed/WypAw_5sYv4?si=v6MV3jctpCkuS9Ih",
-      thumbnail: "https://img.youtube.com/vi/WypAw_5sYv4/maxresdefault.jpg",
-      title: "If Your Video Is Bad, I'll End You!",
-      creator: "ironmouse",
-      views: "237K",
-      likes: "13k",
-      duration: "16:03",
-      toolset: "toolset2"
-    },
+  const [videos, setVideos] = useState([]);
 
+  const fetchPlaylistVideos = async () => {
+    try {
+      const response = await fetch(
+        "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLDLCHs26Pdrf2SyYkULnSTCyEOiJH-QYY&key=AIzaSyBRLUKsTUMFogIUK4AoqYVqzwRaakyWxBM"
+      );
+      const data = await response.json();
+      const videoData = data.items.map((item) => ({
+        link: `https://www.youtube.com/embed/${item.snippet.resourceId.videoId}`,
+        thumbnail: `https://img.youtube.com/vi/${item.snippet.resourceId.videoId}/maxresdefault.jpg`,
+        title: item.snippet.title,
+        creator: item.snippet.channelTitle,
+        views: "N/A", // Views and likes require additional API calls
+        likes: "N/A",
+        duration: "N/A",
+        toolset: "toolset1",
+      }));
+      setVideos(videoData);
+    } catch (error) {
+      console.error("Error fetching playlist videos:", error);
+    }
+  };
 
-  ];
+  useEffect(() => {
+    fetchPlaylistVideos();
+  }, []);
 
   const handleScrollToTop = () => {
     window.scrollTo({
