@@ -19,6 +19,7 @@ export default function Page() {
             if (emotion != currentEmotion) {
                 setExpression(currentEmotion);
                 setEmo(currentEmotion)
+                setText(currentText)
                 console.log("set Expression", emotion , img)
             }
             // if (text != currentText){
@@ -31,18 +32,30 @@ export default function Page() {
     }, [emotion, currentEmotion]); // Dependencies to re-run the effect if these values change
     
     return (
-<div className="navigator-div transition ease-in-out delay-50 hover:scale-110">
-    <h1 id="dialogue" className="text-base sm:text-lg md:text-xl">{text}</h1>
-    
-    <Image
-        id="Navigator"
-        src={img}
-        width={500}
-        height={500}
-        alt="navigator"
-        className="transition ease-in-out delay-50 xl:w-3/5 xl:h-3/5 sm:w-1/4 sm:h-1/4 md:w-2/4 md:h-2/4 xs:w-1/4 xs:h-1/4 h-1/4 w-1/4"
-    />
-</div>
+        <div className="navigator-div transition ease-in-out delay-50 hover:scale-110">
+            
+            <Image
+                id="Navigator"
+                src={img}
+                width={500}
+                height={500}
+                alt="navigator"
+                className="transition ease-in-out delay-50 xl:w-3/5 xl:h-3/5 sm:w-1/4 sm:h-1/4 md:w-2/4 md:h-2/4 xs:w-1/4 xs:h-1/4 h-1/4 w-1/4"
+            />
+            <div className="dialogue-div relative cursor-pointer dark:text-white">
+                <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg dark:bg-gray-200"></span>
+                <div
+                    class="relative p-6 bg-white dark:bg-gray-800 border-2 border-indigo-500 dark:border-gray-300 rounded-lg hover:scale-105 transition duration-500">
+                    <div class="flex items-center">
+                        <span class="text-xl">❤️</span>
+                        <h3 class="my-2 ml-3 text-lg font-bold text-gray-800 dark:text-white">JJWithNoSauce</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        {text}
+                    </p>
+                </div>
+            </div>
+        </div>
         
     );
 

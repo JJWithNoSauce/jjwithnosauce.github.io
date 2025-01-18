@@ -50,6 +50,12 @@ div.sticky {
   left: 16px;
 }
 
+.dialogue-div {
+  position: fixed;
+  bottom: 0px;
+  left: 250px;
+}
+
 .h_iframe iframe {
   position:absolute;
   top:0;

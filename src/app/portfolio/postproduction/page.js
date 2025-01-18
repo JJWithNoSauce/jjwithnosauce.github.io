@@ -149,8 +149,8 @@ export default function Home() {
       <div className="grid h-full w-full grid-cols-1 md:grid-cols-10 md:grid-rows-8 gap-5 p-5 md:p-10">
         <div className="transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl h-full w-full 
             col-span-1 md:col-span-2 md:row-span-2 grids-cols-2 grid-rows-2 p-5 md:p-10 gap-4 rounded-md shadow-md cursor-pointer" 
-            onMouseEnter={() => updateExpression("happy","You can see all of my really cool work over there ;D")} 
-            onMouseLeave={() => updateExpression("idle","test")}
+            onMouseEnter={() => updateExpression("happy","Wanna go back and check another categories?")} 
+            onMouseLeave={() => updateExpression("idle","I guess not.")}
             onClick={() => redirect('/portfolio')}>
           <h1 className="text-left text-3xl md:text-4xl xl:text-5xl gap-10">Back</h1>
           <h1 className="text-left text-lg md:text-xl xl:text-3xl gap-10">to the portfolio selection</h1>
@@ -158,9 +158,9 @@ export default function Home() {
 
         <div className="transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl h-full w-full 
             col-span-1 md:col-span-2 md:row-span-2 grids-cols-2 grid-rows-2 p-5 md:p-10 gap-4 rounded-md shadow-md cursor-pointer" 
-            onMouseEnter={() => updateExpression("happy","You can see all of my really cool work over there ;D")} 
-            onMouseLeave={() => updateExpression("idle","test")}
-            onClick={() => redirect('https://youtube.com/playlist?list=PLDLCHs26Pdrf2SyYkULnSTCyEOiJH-QYY&si=De41KbcehTln22hf')}>
+            onMouseEnter={() => updateExpression("happy","You can see more videos that I edited in a youtube playlist that I made by clicking that one.")} 
+            onMouseLeave={() => updateExpression("idle","You can also scroll down and check more of my work.")}
+            href="https://youtube.com/playlist?list=PLDLCHs26Pdrf2SyYkULnSTCyEOiJH-QYY&si=De41KbcehTln22hf">
           <h1 className="text-left text-3xl md:text-4xl xl:text-5xl gap-10">See full playlist</h1>
           <h1 className="text-left text-lg md:text-xl xl:text-3xl gap-10">on Youtube</h1>
         </div>
