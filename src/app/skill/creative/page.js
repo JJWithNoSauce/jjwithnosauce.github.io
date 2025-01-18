@@ -117,8 +117,8 @@ col-span-1 md:col-span-2 row-span-1 md:row-span-8 grids-cols-4 grid-rows-3 p-4 m
                           <img src="https://www.svgrepo.com/show/208993/cute.svg" alt="" class="h-12 w-12"></img>
                       </div>
                       <div class="p-2">
-                          <p class="font-semibold text-lg">Adhd</p>
-                          <span class="text-gray-600">Autism Denial Disorder?</span>
+                          <p class="font-semibold text-lg">...?</p>
+                          <span class="text-gray-600">this panel used to have funny information about me. but now you'll never know.. hehehe...</span>
                       </div>
                   </a>
               </div>
