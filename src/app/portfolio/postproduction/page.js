@@ -160,7 +160,7 @@ export default function Home() {
             col-span-1 md:col-span-2 md:row-span-2 grids-cols-2 grid-rows-2 p-5 md:p-10 gap-4 rounded-md shadow-md cursor-pointer" 
             onMouseEnter={() => updateExpression("happy","You can see more videos that I edited in a youtube playlist that I made by clicking that one.")} 
             onMouseLeave={() => updateExpression("idle","You can also scroll down and check more of my work.")}
-            href="https://youtube.com/playlist?list=PLDLCHs26Pdrf2SyYkULnSTCyEOiJH-QYY&si=De41KbcehTln22hf">
+            onClick={() =>  window.open("https://youtube.com/playlist?list=PLDLCHs26Pdrf2SyYkULnSTCyEOiJH-QYY&si=De41KbcehTln22hf", '_blank')}>
           <h1 className="text-left text-3xl md:text-4xl xl:text-5xl gap-10">See full playlist</h1>
           <h1 className="text-left text-lg md:text-xl xl:text-3xl gap-10">on Youtube</h1>
         </div>
