@@ -8,7 +8,7 @@ import { redirect } from 'next/navigation'
 export default function Home() {
   return (
     <div className="h-screen w-full flex items-center justify-center font-ibmplex custom-div">
-      <div className="grid h-full w-full grid-cols-10 grid-rows-8 gap-5 p-10">
+      <div className="grid h-full w-full grid-cols-10 grid-rows-8 gap-10 p-10">
 
         <div className="transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl h-full w-full 
         xl:col-span-2 xl:row-span-8 grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md cursor-pointer" 
@@ -25,6 +25,7 @@ export default function Home() {
         onMouseLeave={() => updateExpression("idle","whaa..? I thought you'd be interested in that.")}
         onClick={() => redirect('/portfolio/gamedev')}>
           <h1 className="text-left text-4xl xl:text-5xl gap-10">Game Making</h1>
+          <h1 className="text-left text-1xl xl:text-2xl gap-10">Video game that I made or worked on.</h1>
         </div>
         
         
@@ -34,6 +35,7 @@ export default function Home() {
          onMouseEnter={() => updateExpression("happy","Wanna see some of the video I edited myself?")} 
          onMouseLeave={() => updateExpression("idle","It's super fun~")}>
           <h1 className="text-left text-4xl xl:text-5xl">Post Production</h1>
+          <h1 className="text-left text-1xl xl:text-2xl gap-10">Video Editing, Visual effects, Audio mixing, etc</h1>
         </div>
         
         <div className="xl:col-span-5 xl:row-span-4 transition ease-in-out delay-50 bg-[#DBD3D3] opacity-90 hover:opacity-100

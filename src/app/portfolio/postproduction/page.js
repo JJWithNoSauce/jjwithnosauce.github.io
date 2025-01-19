@@ -146,7 +146,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center font-ibmplex custom-div">
-      <div className="grid h-full w-full grid-cols-1 md:grid-cols-10 md:grid-rows-8 gap-5 p-5 md:p-10">
+      <div className="grid h-full w-full grid-cols-1 md:grid-cols-10 md:grid-rows-8 gap-10 p-5 md:p-10">
         <div className="transition ease-in-out delay-50 hover:scale-105 bg-[#DBD3D3] hover:bg-[#EC8305] opacity-90 hover:opacity-100 hover:shadow-2xl h-full w-full 
             col-span-1 md:col-span-2 md:row-span-2 grids-cols-2 grid-rows-2 p-5 md:p-10 gap-4 rounded-md shadow-md cursor-pointer" 
             onMouseEnter={() => updateExpression("happy","Wanna go back and check another categories?")} 

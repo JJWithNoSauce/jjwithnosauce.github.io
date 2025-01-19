@@ -8,7 +8,7 @@ import { redirect } from 'next/navigation'
 export default function Home() {
   return (
     <div className="h-screen w-full flex items-center justify-center font-ibmplex custom-div">
-      <div className="grid h-full w-full grid-cols-10 grid-rows-8 gap-5 p-10">
+      <div className="grid h-full w-full grid-cols-10 grid-rows-8 gap-10 p-10">
         <div className="col-span-10 row-span-5 xl:col-span-5 xl:row-span-8 bg-[#DBD3D3] h-full w-full grids-cols-4 grid-rows-3 p-10 gap-4 rounded-md shadow-md"
         onMouseEnter={() => updateExpression("happy","Nice to meet you recruiter! Feel free to explore my website, it's a bit scuffed at the moment but I'll do my best to make this website better in the future!")} 
         onMouseLeave={() => updateExpression("idle","")} onClick={() => redirect('/portfolio')}>
