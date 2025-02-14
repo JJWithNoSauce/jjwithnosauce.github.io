@@ -21,6 +21,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <header class='shadow-md font-sans tracking-wide relative z-50 opacity-50 hover:opacity-100'>
+      <section class='py-2 bg-[#ff5733] text-white text-center px-10'>
+        <p class='text-sm'><strong class="mx-3">Website is heavily under construction, Mobile UI won't work accordingly. Please switch to desktop for the best experience.</strong></p>
+      </section>
+      </header>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

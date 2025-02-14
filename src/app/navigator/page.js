@@ -42,7 +42,7 @@ export default function Page() {
                 alt="navigator"
                 className="transition ease-in-out delay-50 xl:w-3/5 xl:h-3/5 sm:w-1/4 sm:h-1/4 md:w-2/4 md:h-2/4 xs:w-1/4 xs:h-1/4 h-1/4 w-1/4"
             />
-            <div className="dialogue-div relative cursor-pointer dark:text-white">
+            <div className="dialogue-div relative cursor-pointer dark:text-white xl:scale-100 scale-50">
                 <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg dark:bg-gray-200"></span>
                 <div
                     class="relative p-6 bg-white dark:bg-gray-800 border-2 border-indigo-500 dark:border-gray-300 rounded-lg hover:scale-105 transition duration-500">
