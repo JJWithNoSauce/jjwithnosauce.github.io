@@ -32,7 +32,9 @@ export default function Page() {
     }, [emotion, currentEmotion]); // Dependencies to re-run the effect if these values change
     
     return (
-        <div className="navigator-div transition ease-in-out delay-50 hover:scale-110">
+        <div className="navigator-div transition ease-in-out delay-50 hover:scale-110"
+        onMouseEnter={() => updateExpression("happy","สวัสดีครับ! (Hello there!)")} 
+        onMouseLeave={() => updateExpression("idle","")}>
             
             <Image
                 id="Navigator"

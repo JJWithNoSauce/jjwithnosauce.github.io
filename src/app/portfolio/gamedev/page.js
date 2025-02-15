@@ -24,7 +24,7 @@ export default function Home() {
         onMouseEnter={() => updateExpression("happy","The Witch With Pain is the very first video game that I made! I worked on coding, arts and animation, pretty much the entire project. It's a top down movement puzzle game that was a part of a halloween gamejam and The gameplay category for this game got ranked at #32 out of 236 entries! You'll get to play as Wise, a witch that gain power through pain. Wise will have to make her way through obstacles and puzzles to get out of the cave she's trapped in.")} 
         onMouseLeave={() => updateExpression("idle","")}>
           <img src="/TheWitchWithPainThumbnail.png" alt="image" class="w-full h-full relative z-0 rounded-lg scale-100 transition-all duration-500 group-hover:scale-125 group-hover:opacity-50"></img>
-<h1 class="transition-all duration-300 absolute inset-0 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-black z-10 pointer-events-none group-hover:scale-150 opacity-0 group-hover:opacity-100 ">The Witch With Pain</h1>
+<h1 class="transition-all duration-300 absolute inset-0 flex items-center justify-center text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-black z-10 pointer-events-none group-hover:scale-125 opacity-0 group-hover:opacity-100 ">The Witch With Pain</h1>
         </div>
         
         
