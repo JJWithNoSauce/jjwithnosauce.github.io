@@ -39,7 +39,7 @@ export default function Home() {
         onClick={() => window.open('https://github.com/JJWithNoSauce/StudentCheckInSystem', '_blank')}
         onMouseEnter={() => updateExpression("happy","StudentCheckInSystem is a webservice which has the ability to check student attendant and manage classrooms, powered by Spring Boot and Thymeleaf. I worked on the Frontend and the UI!")} 
         onMouseLeave={() => updateExpression("idle","")}>
-          <img src="/StudentCheckinThumbnail.png" alt="image" class="w-full h-full relative z-0 rounded-lg scale-100 transition-all duration-500 group-hover:scale-125 group-hover:opacity-50"></img>
+          <img src="/StudentCheckInThumbnail.png" alt="image" class="w-full h-full relative z-0 rounded-lg scale-100 transition-all duration-500 group-hover:scale-125 group-hover:opacity-50"></img>
           <h1 class="transition-all duration-300 absolute inset-0 flex items-center justify-center text-4xl xl:text-5xl text-black z-10 pointer-events-none group-hover:scale-100 scale-75 opacity-0 group-hover:opacity-100 ">StudentCheckInSystem</h1>
         </div>
       </div>
